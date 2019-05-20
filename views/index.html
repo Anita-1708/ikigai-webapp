@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>
+            Ikigai Test
+        </title>
+        <link rel="stylesheet" type="text/css" href="./styles/index.css">
+        
+    </head>
+    <body>
+        <div class="heading" align="center">
+            The Ikigai Test
+            
+        </div>
+        <div class="divleft">
+            <img src="./resources/ikigaigirl.jpg" style="margin-left:30px" height="550px" width="500p"></img>
+        </div>
+        <div class="divright">
+        <form action="/post-answers" method="POST">
+        <label>Your Name:<input type="text" name="name" required></label><br><br>
+                    <hr>
+                    <br><br>
+        
+                
+                    
+                    <div class="formleft">
+                            <input type="text" class="tmp" name="tempyoulove" id="tempyoulove" required>
+                            <label>What You Love:<br><input type="text" id="youlove" name="youlove"></label>
+                            <br><br>
+                            <input type="button" value="Save and Enter More" onclick="onLoveBtnClick()">
+                            <br><br><br><br><br>
+                            <input type="text" class="tmp" name="tempgoodat" id="tempgoodat" required>
+                            <label>What you are good at:<br><input type="text" id="goodat" name="goodat"></label>
+                            <br><br>
+                            <input type="button" value="Save and Enter More" onclick="onGoodatBtnClick()">
+                            <br><br>
+                    </div>
+                    <div class="formright">
+                            <input type="text" class="tmp" name="temppaidfor" id="temppaidfor" required>
+                            <label>What you can be paid for:<br><input type="text" id="paidfor" name="paidfor"></label>
+                            <br><br>
+                            <input type="button" value="Save and Enter More" onclick="onPaidforBtnClick()">
+                            <br><br><br><br><br>
+                            <input type="text" class="tmp" name="tempworldneeds" id="tempworldneeds" required>
+                            <label>What the world needs:<br><input type="text" id="worldneeds" name="worldneeds"></label>
+                            <br><br>
+                            <input type="button" value="Save and Enter More" onclick="onWorldneedsBtnClick()">
+                            <br><br>
+                    </div>
+                    
+                    
+                    
+                    <input type="submit" value="Find Your Ikigai" onclick=onSubmitBtnClick()>
+                    
+                </form>
+        </div>
+        
+        
+        <!----<a href="/view-documents">View Documents</a>-->
+        <script>
+            function onLoveBtnClick(){
+            //    var arr={"abc":1,"abc":2};
+            //     localStorage["mydata"] = JSON.stringify(arr);
+            //     alert("stored to local storage");
+            // var youlove=document.getElementById('youlove');
+            // var tmpyoulove=document.getElementById('tmpyoulove');
+            // tmpyoulove.value=youlove.value;;
+            // youlove.value="";
+            //alert("1");
+                if(document.getElementById("youlove").value==""){
+                    alert("enter a value first");
+                }
+                else{
+            document.getElementById("tempyoulove").value=  document.getElementById("tempyoulove").value+","+document.getElementById('youlove').value;
+            document.getElementById('youlove').value="";
+                }
+            }
+
+            function onGoodatBtnClick(){
+            if(document.getElementById("goodat").value==""){
+                alert("enter a value first");
+            }
+            else{
+            document.getElementById("tempgoodat").value=  document.getElementById("tempgoodat").value+","+document.getElementById('goodat').value;
+            document.getElementById('goodat').value="";
+                }
+            }
+
+            function onPaidforBtnClick(){
+            if(document.getElementById("paidfor").value==""){
+                alert("enter a value first");
+            }
+            else{
+            document.getElementById("temppaidfor").value=  document.getElementById("temppaidfor").value+","+document.getElementById('paidfor').value;
+            document.getElementById('paidfor').value="";
+            }
+            }
+
+            function onWorldneedsBtnClick(){
+            if(document.getElementById("worldneeds").value==""){
+            alert("enter a value first");
+            }
+            else{
+            document.getElementById("tempworldneeds").value=  document.getElementById("tempworldneeds").value+","+document.getElementById('worldneeds').value;
+            document.getElementById('worldneeds').value="";
+            }
+            }
+
+            function onSubmitBtnClick(){
+                
+                if(document.getElementById('tempyoulove').value == "" || document.getElementById('tempgoodat').value == ""
+                    ||document.getElementById('temppaidfor').value == ""||document.getElementById('tempworldneeds').value == "")
+                {
+                    alert("Do not leave any field empty. Enter atleast one value for all fields");
+                    
+                }
+            }
+
+        </script>
+
+    </body>
+</html>

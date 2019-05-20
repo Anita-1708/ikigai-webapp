@@ -1,0 +1,105 @@
+
+div{
+    
+}
+.left{
+    
+    height:100%;
+    width:50%;
+    float:left;
+    
+}
+.right{
+   
+    
+    width:49%;
+    float:left;
+    
+    
+}
+.rightheading{
+    
+    height:80px;
+}
+img{
+    
+    height:500px;
+    width:580px;
+    margin-left:30px;
+    margin-top:10px;
+}
+.divsubone{
+    height:200px;
+}
+.divsubtwo{
+    height:200px;
+}
+.divsubthree{
+    height:200px;
+}
+.divpassion{
+    height:100%;
+    width:250px;
+    float: left;
+    background-color: hsla(0, 100%, 50%, 0.3);
+    border: 1px solid hsla(0, 100%, 50%, 0.3);
+    
+}
+.divmission{
+    height:100%;
+    width:250px;
+   float: right;
+   background-color:hsla(41, 75%, 51%, 0.3);
+   border: 1px solid hsla(41, 75%, 51%, 0.3);
+    
+}
+.divprofession{
+    height:100%;
+    width:250px;
+    float:left;
+    background-color:hsla(59, 85%, 55%, 0.3);
+    border: 1px solid hsla(59, 85%, 55%);
+    
+}
+.divvocation{
+    height:100%;
+    width:250px;
+    float:right;
+    background-color:hsla(308, 48%, 65%, 0.3);
+    border: 1px solid hsla(308, 48%, 65%, 0.3);
+    
+}
+.divpurpose{
+    height:100%;
+    width:250px;
+    margin-left:200px;
+    background-color:hsla(0, 55%, 66%, 0.3);
+    border: 1px solid hsla(0, 55%, 66%, 0.3);
+    
+}
+p.head{
+   
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 20px;
+   margin-left: 80px;
+   margin-top: 35px;
+   font-weight: bold
+}
+p.sub{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:normal;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+
+}
+
+p.subtext{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:normal;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-style: italic;
+    font-size:18px;
+
+}
